@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #D93B75;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.151);
+    border-radius: 0px 0px 5px 5px;
+    min-height: 100px;
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 1px 1px 1.5px black; /* Efieto de desfoque na fonte na letra, sombra */
+}
+
+.video { /* Configurar a posição do vídeo dentro da div */
+    max-width: 600px;
+    max-height: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+nav { /* Aplica a todo nav */
+    padding: 10px;
+
+}
+nav > a { /* Aplica somenta formatação somente a a */
+    color: black;
+    padding: 2px;
+    font-weight: bold;
+    text-decoration: none; /* Retira o sumbliado */
+    transition-duration: 0.4s; /* Efeito de transição */
+    border-radius: 5px;
+}
+nav > a:hover { /* Quando passar o mouse */
+    background-color: rgba(0, 0, 0, 0.151);
+
+}
+body {
+    background-color: #F25EA3;
+    border-radius: 5px;
+}
+p {
+    margin: 10px 0px;
+}
+
+main {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.151);
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: justify;
+    height: auto;
+    width: 90%;
+    background-color: #D93B75;
+}
+
+article dt {
+    margin: 10px 0px;
+}
+
+.rolagem {
+    width: 100%;            /* Define a largura do container */
+    overflow-x: auto;       /* Permite rolagem horizontal */
+    white-space: nowrap;    /* Impede quebra de linha, deixando as imagens em uma única linha */
+    padding: 10px 0;        /* Espaçamento nas laterais */
+}
+
+.rolagem img {
+    height: 500px;          /* Ajuste de altura para as imagens */
+    margin-right: 10px;     /* Espaçamento entre as imagens */
+    object-fit: cover;      /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+footer {
+    text-align: center;
+}
